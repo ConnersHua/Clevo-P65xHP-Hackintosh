@@ -20,7 +20,11 @@
 
 ![截屏2019-10-17上午11.29.29.png](https://i.loli.net/2019/10/17/2b9OY3jDZzKLc4G.png)
 
-**关于声卡**
+在完成核显设置后，同样的在 Hackintool 中的「显示器」进行 EDID 设置，完成后应用到 config.json。
+
+然后建议使用 [一键开启 macOS HiDPI](https://github.com/xzhih/one-key-hidpi/blob/master/README-zh.md) 再进行一次 EDID 修复，这样「系统偏好设置」中的图标就正常了，而且唤醒时屏幕顶部不会出现白条。
+
+关于声卡**
 
 本机型号（Realtek ACL892）不需要 AppleALC 仿冒，直接将 Clover 中「Devices」下「Audio」的「Inject」设置为「28」即可声卡和麦克风同时工作。
 
