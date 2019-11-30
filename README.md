@@ -24,9 +24,9 @@
 
 然后建议使用 [一键开启 macOS HiDPI](https://github.com/xzhih/one-key-hidpi/blob/master/README-zh.md) 再进行一次 EDID 修复，这样「系统偏好设置」中的图标就正常了，而且唤醒时屏幕顶部不会出现白条。
 
-关于声卡**
+**关于声卡**
 
-本机型号（Realtek ACL892）不需要 AppleALC 仿冒，直接将 Clover 中「Devices」下「Audio」的「Inject」设置为「28」即可声卡和麦克风同时工作。
+本机型号（Realtek ACL892）不需要仿冒，直接使用 AppleALC 并将 Clover 中「Devices」>「Audio」>「Inject」设置为「28」即可声卡和麦克风同时工作。
 
 **关于蓝牙**
 
@@ -38,4 +38,4 @@ DW1830 的蓝牙驱动使用以下 3 个：
 
 将以上三个放置 EFI 中即可，不需要放置「SE」（另一种解决方案是用 BrcmFirmwareRepo.kext 取代 BrcmFirmwareData.kext 的就需要放置在 SE，不过个人并不建议）
 
-另外，10.15 中的蓝牙使用 [OS-X-BrcmPatchRAM](https://bitbucket.org/RehabMan/os-x-brcmpatchram) 2018-05-05 版本已经不可用还会导致开机和关机卡顿，本配置使用也是用了黑果小兵镜像中的修改版，已可正常使用。
+另外，10.15 中的蓝牙使用 [OS-X-BrcmPatchRAM](https://bitbucket.org/RehabMan/os-x-brcmpatchram) 2018-05-05 版本已经不可用还会导致开机和关机卡顿，本配置修改版已可正常使用。
