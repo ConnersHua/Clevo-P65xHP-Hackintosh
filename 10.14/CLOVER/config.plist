@@ -560,7 +560,7 @@
 				<key>Comment</key>
 				<string>10.13.x USB Port Limit Patch</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>g32UDw+DlwQAAA==</data>
 				<key>InfoPlistPatch</key>
@@ -576,7 +576,7 @@
 				<key>Comment</key>
 				<string>USB 10.13.6 by PMHeart</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>g32IDw+DpwQAAA==</data>
 				<key>InfoPlistPatch</key>
@@ -592,7 +592,7 @@
 				<key>Comment</key>
 				<string>USB port limit patch 10.14.x modify by DalianSky(credit PMHeart)</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>g+MP0w==</data>
 				<key>InfoPlistPatch</key>
@@ -606,7 +606,7 @@
 				<key>Comment</key>
 				<string>USB Port limit patch 10.15.x #1 modify by DalianSky</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>g/kPDw==</data>
 				<key>InfoPlistPatch</key>
@@ -620,7 +620,7 @@
 				<key>Comment</key>
 				<string>USB Port limit patch 10.14.x modify by DalianSky(credits PMheart)</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>g/sPDw==</data>
 				<key>InfoPlistPatch</key>
@@ -634,7 +634,7 @@
 				<key>Comment</key>
 				<string>USB Port limit patch 10.14.x modify by DalianSky(credits PMheart)</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>g/sPDw==</data>
 				<key>InfoPlistPatch</key>
@@ -648,7 +648,7 @@
 				<key>Comment</key>
 				<string>USB Port limit patch 10.14.x modify by DalianSky(credits PMheart)</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>g/8PDw==</data>
 				<key>InfoPlistPatch</key>
