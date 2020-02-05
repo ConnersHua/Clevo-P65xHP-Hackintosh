@@ -28,12 +28,12 @@
 
 **关于蓝牙**
 
-DW1830 的蓝牙驱动使用以下 2 个：
+DW1830 的蓝牙驱动使用：
 
 - BrcmFirmwareData.kext
 - BrcmPatchRAM2.kext
 
-将以上三个放置 EFI 中即可，不需要放置「SE」（另一种解决方案是用 BrcmFirmwareRepo.kext 取代 BrcmFirmwareData.kext 的就需要放置在 SE，不过个人并不建议）
+将以上 2 个放置 EFI 中即可，不需要放置在「SE」（另一种解决方案是以 BrcmFirmwareRepo.kext 取代 BrcmFirmwareData.kext 则需要放置在 SE，不过个人并不建议）
 
 ## 已知问题
 
