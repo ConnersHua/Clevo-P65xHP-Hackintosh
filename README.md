@@ -16,13 +16,11 @@
 
 **关于显卡**
 
-从 10.13 开始更换了夏普的 SHP1430 屏幕，所以核心显卡部分会不一样，使用[黑果小兵](https://blog.daliansky.net/)镜像中较为纯净的 config.json 配合 Hackintool 驱动核显即可，需要注意的是本机型的「平台 ID」为「0x591B0006」（使用「0x591B0000」存在开机黑屏的问题）
+从 10.13 开始更换了夏普的 SHP1430 屏幕，所以核心显卡部分会不一样，使用[黑果小兵](https://blog.daliansky.net/)镜像中较为纯净的 config.json 配合 Hackintool 驱动核显即可
 
-![截屏2019-10-17上午11.29.29.png](https://i.loli.net/2019/10/17/2b9OY3jDZzKLc4G.png)
+![屏幕快照](https://i.loli.net/2020/02/05/yaCjYekqdm1tzFh.png)
 
-在完成核显设置后，同样的在 Hackintool 中的「显示器」进行 EDID 设置，完成后应用到 config.json。
-
-然后建议使用 [一键开启 macOS HiDPI](https://github.com/xzhih/one-key-hidpi/blob/master/README-zh.md) 再进行一次 EDID 修复，这样「系统偏好设置」中的图标就正常了，而且唤醒时屏幕顶部不会出现白条。
+在完成核显设置后，然后建议使用 [一键开启 macOS HiDPI](https://github.com/xzhih/one-key-hidpi/blob/master/README-zh.md) 再进行一次 EDID 修复，这样「系统偏好设置」中的图标就正常了。
 
 **关于声卡**
 
@@ -30,12 +28,14 @@
 
 **关于蓝牙**
 
-DW1830 的蓝牙驱动使用以下 3 个：
+DW1830 的蓝牙驱动使用以下 2 个：
 
-- BrcmBluetoothInjector.kext
 - BrcmFirmwareData.kext
 - BrcmPatchRAM2.kext
 
 将以上三个放置 EFI 中即可，不需要放置「SE」（另一种解决方案是用 BrcmFirmwareRepo.kext 取代 BrcmFirmwareData.kext 的就需要放置在 SE，不过个人并不建议）
 
-另外，10.15 中的蓝牙使用 [OS-X-BrcmPatchRAM](https://bitbucket.org/RehabMan/os-x-brcmpatchram) 2018-05-05 版本已经不可用还会导致开机和关机卡顿，本配置修改版已可正常使用。
+## 已知问题
+
+- HDMI 无法使用（应该是需要独显，但是 macOS Mojave 开始无法驱动 N 卡）
+- 拔掉电源后有可能出现暂时的声卡失效，稍等片刻或接回电源再拔出可解决
