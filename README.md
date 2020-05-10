@@ -28,12 +28,13 @@
 
 **关于蓝牙**
 
-DW1830 的蓝牙驱动使用：
+DW1830 的蓝牙驱动使用 [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM/releases)：
 
+- BrcmBluetoothInjector.kext
 - BrcmFirmwareData.kext
-- BrcmPatchRAM2.kext
+- BrcmPatchRAM2.kext（10.15 使用 BrcmPatchRAM3.kext）
 
-将以上 2 个放置 EFI 中即可，不需要放置在「SE」（另一种解决方案是以 BrcmFirmwareRepo.kext 取代 BrcmFirmwareData.kext 则需要放置在 SE，不过个人并不建议）
+将以上 3 个文件放置在「/Library/Extensions」
 
 ## 已知问题
 
