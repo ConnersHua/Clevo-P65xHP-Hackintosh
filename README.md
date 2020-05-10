@@ -31,7 +31,7 @@
 DW1830 的蓝牙驱动使用 [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM/releases)：
 
 - BrcmBluetoothInjector.kext
-- BrcmFirmwareData.kext
+- BrcmFirmwareRepo.kext
 - BrcmPatchRAM2.kext（10.15 使用 BrcmPatchRAM3.kext）
 
 将以上 3 个文件放置在「/Library/Extensions」
